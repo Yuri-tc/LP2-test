@@ -31,6 +31,7 @@ li {
 .__ttl {
   text-align: center;
   margin-bottom: 3.5%;
+  word-break: keep-all;
 }
 
 .__ttl h2 {
@@ -77,6 +78,7 @@ li {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  height: 100%;
 }
 
 .header-wrap__nav__list__item:nth-last-of-type(1) {
@@ -102,7 +104,8 @@ li {
   display: flex;
   align-items: center;
   width: 100%;
-  padding: 0.5vw;
+  max-height: 45px;
+  padding: 0 2%;
   font-size: clamp(0.5rem, 0.136rem + 1.82vw, 1.5rem);
 }
 
@@ -265,7 +268,7 @@ li {
 }
 
 .top-wrap__left__achieve p{
-  font-size:clamp(0.65rem, 0.341rem + 1.55vw, 1.5rem);
+  font-size:clamp(0.5rem, 0.136rem + 1.82vw, 1.5rem);
   font-weight: bold;
 }
 
@@ -295,6 +298,7 @@ li {
 
 .__cta-btn {
   width: 50%;
+  height: 100%;
   margin: 0 auto;
 }
 
@@ -326,6 +330,7 @@ li {
   align-items: center;
   text-align: center;
   font-size:clamp(0.7rem, 0.409rem + 1.45vw, 1.5rem);
+  max-height: 50px;
 }
 
 .__cta-btn__tel {
@@ -421,6 +426,7 @@ table td:nth-of-type(2) {
 .fea-wrap__ttl{
   text-align: center;
   margin-bottom: 3.5%;
+  word-break: keep-all;
 }
 
 .fea-wrap__ttl h3{
@@ -434,7 +440,10 @@ table td:nth-of-type(2) {
   color: #00C5D8;
   font-weight: bold;
 }
-
+.fea-wrap__body{
+  width: 100%;
+  margin: auto;
+}
 .fea-wrap__body__block{
   display: flex;
   justify-content: space-between;
@@ -470,11 +479,11 @@ table td:nth-of-type(2) {
 
 .fea-wrap__body__block__item__ttl h3{
   display: inline-block;
-  font-size: clamp(0.65rem, 0.577rem + 0.36vw, 0.85rem);
+  font-size:clamp(0.5rem, 0.373rem + 0.64vw, 0.85rem);
 }
 
 .fea-wrap__body__block__item__ttl strong{
-  font-size: clamp(0.85rem, 0.741rem + 0.55vw, 1.15rem);
+  font-size:clamp(0.65rem, 0.468rem + 0.91vw, 1.15rem);
   color: #DBCD35;
 }
 
@@ -505,6 +514,7 @@ table td:nth-of-type(2) {
   margin-top: 2.5%;
   margin-bottom: 3.5%;
   text-align: center;
+  word-break: keep-all;
 }
 
 .result-wrap__ttl h3{
@@ -637,6 +647,7 @@ table td:nth-of-type(2) {
   text-align: center;
   border-bottom:1px solid #00C5D8;
   font-size:clamp(0.65rem, 0.468rem + 0.91vw, 1.15rem);
+  word-break: keep-all;
 }
 
 .menu-wrap__body__block__item__txt{
@@ -710,6 +721,7 @@ table td:nth-of-type(2) {
   background-color: #E9F7F7;
   color: #00C5D8;
   font-size: clamp(0.5rem, 0.318rem + 0.91vw, 1rem);
+  
 }
 
 .table2_item small{
@@ -722,6 +734,7 @@ td {
   padding: 1%;
   vertical-align: middle;
   font-size: clamp(0.65rem, 0.523rem + 0.64vw, 1rem);
+  word-break: keep-all;
   }
 
 td p{
@@ -731,6 +744,7 @@ td p{
 caption {
   caption-side: bottom;
   font-size: clamp(0.35rem, 0.241rem + 0.55vw, 0.65rem);
+  word-break: keep-all;
 }
 
 
@@ -798,12 +812,13 @@ caption {
 .menu-wrap__body__block__pay h4 {
   color: #00C5D8;
   display: inline-block;
-  font-size: clamp(0.75rem, 0.659rem + 0.45vw, 1rem);
+  font-size:clamp(0.65rem, 0.523rem + 0.64vw, 1rem);
 }
 
 .menu-wrap__body__block__pay h4 strong {
   font-size: clamp(0.85rem, 0.614rem + 1.18vw, 1.5rem);
   font-weight: bold;
+  word-break: keep-all;
 }
 
 .menu-wrap__body__block__paycircle{
@@ -824,6 +839,7 @@ caption {
 .circle2 p{
   text-align: center;
   font-size: clamp(0.5rem, 0.318rem + 0.91vw, 1rem);
+  line-height: 1.2;
 }
 
 svg{
@@ -1243,6 +1259,10 @@ select{
     height: 40px;
   }
 
+.header-wrap__nav__list__item__tel{
+  display: none;
+}
+
   .header-wrap__nav__list__item:nth-last-of-type(1) {
     margin-left: 0;
   }
@@ -1266,9 +1286,9 @@ select{
     margin-bottom: 5%;
   }
 
-    .top{
-      margin-bottom: 5%;
-    }
+  .top{
+    margin-bottom: 5%;
+  }
 
   .top-wrap__left__mes{
     white-space: normal;
@@ -1283,22 +1303,31 @@ select{
     width: 80%;
   }
 
+.__cta-btn{
+  word-break: keep-all;
+}
 .__cta-btn2 a i {
   color: #00C5D8;
   display: block;
 }
 
+.fea-wrap__body{
+  width: 100%;
+  justify-content: space-around;
+}
 
 .fea-wrap__body__block {
-  width: 100%;
+  width: 80%;
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  padding: 3.5%;
+  margin: auto;
   flex-wrap: wrap;
 }
 
   .fea-wrap__body__block__item{
     width: 40%;
-    margin-bottom: 7%;
+    margin-bottom: 10%;
   }
 
   .circle_number {
